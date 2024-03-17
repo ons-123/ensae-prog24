@@ -54,11 +54,11 @@ class Grid():
         return f"<grid.Grid: m={self.m}, n={self.n}>"
 
     def is_sorted(self):
+        return self.grid == list(range(1, self.size**2)) + [0]
         """
         Checks is the current state of the grid is sorte and returns the answer as a boolean.
         """
-        # TODO: implement this function (and remove the line "raise NotImplementedError").
-        raise NotImplementedError
+        
 
     def swap(self, cell1, cell2):
         """
